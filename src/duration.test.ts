@@ -19,3 +19,11 @@ test("The input 3600 should return 1h", () =>  {
 test("The input 3999 should return 1h6m39s", () =>  {
     expect(formatDuration(3999)).toBe("1h6m39s")
 })
+
+test("The input 0 should return 0s", () => {
+    expect(formatDuration(0)).toBe("0s");
+})
+
+test("Negative input should throw an error", () => {
+    expect(() => formatDuration(-1)).toThrow("seconds must be non-negative.");
+})
