@@ -16,6 +16,6 @@ test("The input 3600 should return 1h", () =>  {
     expect(formatDuration(3600)).toBe("1h")
 })
 
-test("The input 3999 should return 1h6m30s", () =>  {
-    expect(formatDuration(3999)).toBe("1h6m30s")
+test("The input 3999 should return 1h6m39s", () =>  {
+    expect(formatDuration(3999)).toBe("1h6m39s")
 })
